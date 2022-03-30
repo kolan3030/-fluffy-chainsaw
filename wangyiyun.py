@@ -66,10 +66,10 @@ for url in urls:
 
     #
 
-# print(rps)
+print(rps)
 
-    # total = {"热评内容":rps}
-    # info = pd.DataFrame(total)
-    # writer = pd.ExcelWriter("//mnt/e/python/wslProject/网易云热评.xlsx")
-    # info.to_excel(writer, sheet_name="前10页")
+    total = {"热评内容":rps}
+    info = pd.DataFrame(total)
+    writer = pd.ExcelWriter("//mnt/e/python/wslProject/网易云热评.xlsx")
+    info.to_excel(writer, sheet_name="前10页")
     writer.save()
